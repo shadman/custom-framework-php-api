@@ -51,10 +51,10 @@ API Calling:
 =============================
 You can call API via Rest Client
 
-**ROUTE:** http://localhost/boarding/app.php/reservation
-**METHOD:** POST
-**REQUEST JSON:** {"boarding_passes":[112233,221144,330055,441166]}
-**RESPINSE JSON:** {"results":["Your train from Madrid to Barcelona. Sit in 45B.","Take the bus from Barcelona to Gerona Airport. No seat assignment."]}
+- **ROUTE:** http://localhost/boarding/app.php/reservation
+- **METHOD:** POST
+- **REQUEST JSON:** {"boarding_passes":[112233,221144,330055,441166]}
+- **RESPONSE JSON:** {"results":["Your train from Madrid to Barcelona. Sit in 45B.","Take the bus from Barcelona to Gerona Airport. No seat assignment."]}
 
 
 =============================
