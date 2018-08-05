@@ -1,34 +1,27 @@
 
-=============================
-Application Requirements:
-=============================
+
+# Application Requirements:
+
 - PHP 5.3 or greater
 - MySQL
 
+# Deployment
 
-=============================
-Deployment
-=============================
-
-Extract Zip File:
------------------------------
+## Extract Zip File:
 - Extract provided zip file to your php project directory;
 
 Example: (project directory)
 $ cd /var/www/html/boarding/
 
-Create Database:
------------------------------
+## Create Database:
 - Create your database in mysql manually and set any name.
 - After creating database, add your mysql configuration in database.php file.
 
-Setting Database Credentials:
------------------------------
+## Setting Database Credentials:
 Add your database credentials and details by opening a file in edit mode.
 $  vim config/database.php
 
-Run Migrations and Seeds:
------------------------------
+## Run Migrations and Seeds:
 After creating and connecting db, run migration first
 
 $  php db/migrations.php
@@ -38,17 +31,15 @@ After migration, run seeds
 $  php db/seeds.php
 
 
-=============================
-Execute Tests:
-=============================
+# Execute Tests:
+
 Open project directory on terminal and execute tests by using below command:
 
 $  vendor/eher/phpunit/bin/phpunit test/reservations_test.php
 
 
-=============================
-API Calling:
-=============================
+# API Calling:
+
 You can call API via Rest Client
 
 - **ROUTE:** http://localhost/boarding/app.php/reservation
@@ -57,9 +48,8 @@ You can call API via Rest Client
 - **RESPONSE JSON:** {"results":["Your train from Madrid to Barcelona. Sit in 45B.","Take the bus from Barcelona to Gerona Airport. No seat assignment."]}
 
 
-=============================
-Features:
-=============================
+# Features:
+
 - Developed a MC (Model & Controller) architecture for API
 - Have routes option to add more.
 - Have applied OOP.
@@ -68,9 +58,8 @@ Features:
 - Added APIdocs
 
 
-=============================
-Note: 
-=============================
+# Note: 
+
 - I developed a simple and lite Framework for APIs
 - Need to run migrations and seeds before test anything.
 - APIdocs added with main API route's method.
@@ -81,3 +70,4 @@ Note:
 - It's a limited version.
 
 
+Cheers !
